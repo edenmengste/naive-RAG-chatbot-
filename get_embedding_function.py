@@ -1,4 +1,4 @@
-from langchain_community.embeddings.bedrock import BedrockEmbeddingscls
+from langchain_community.embeddings.bedrock import BedrockEmbeddings
 
 def get_embedding_function():
     embeddings = BedrockEmbeddings(
