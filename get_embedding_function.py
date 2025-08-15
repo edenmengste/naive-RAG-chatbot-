@@ -1,8 +1,7 @@
-from langchain_community.embeddings.bedrock import BedrockEmbeddings
+from langchain_openai import OpenAIEmbeddings
 
 def get_embedding_function():
-    embeddings = BedrockEmbeddings(
-        credentials_profile_name="default", region_name="us-east-1"
+    embeddings = OpenAIEmbeddings(
+        model="text-embedding-3-small"
     )
-   
     return embeddings
